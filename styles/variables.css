@@ -12,7 +12,7 @@
     ),
     repeating-linear-gradient(90deg, #d3d3d3 0 1px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-  --width-content: clamp(375px, 100vi, 700px);
+  --width-content: clamp(375px, 100%, 700px);
   --main-text-color: #000;
   --stroke-color: rgba(255, 255, 255, 1);
   --fill-color: #ff0000;
