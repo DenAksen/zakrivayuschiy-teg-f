@@ -55,7 +55,7 @@
 
 .content {
   font-family: inherit;
-  background-color: var(--background-color);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   gap: 52px;
@@ -65,6 +65,7 @@
 .content__card {
   border: 2px solid #000;
   box-sizing: border-box;
+  background-color: var(--background-color);
 }
 
 .content__card-title {
