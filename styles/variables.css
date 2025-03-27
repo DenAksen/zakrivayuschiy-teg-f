@@ -17,4 +17,5 @@
   --stroke-color: rgba(255, 255, 255, 1);
   --fill-color: #ff0000;
   --anim-time-func: ease-in;
+  --trans-time-function: ease;
 }
