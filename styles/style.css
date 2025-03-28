@@ -19,7 +19,7 @@
   font-variation-settings: "wdth" var(--card-font-wdth);
 }
 
-.size-content {
+.content-size {
   inline-size: var(--width-content);
   margin: 0 auto;
 }
@@ -42,12 +42,12 @@
   padding: clamp(120px, 26.7%, 128px) 0;
 }
 
-.header_title {
+.header-title {
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231cqi, 4.0625rem);
   font-weight: inherit;
 }
 
-.header_subtitle {
+.header-subtitle {
   font-size: clamp(0.875rem, 0.226rem + 2.7692cqi, 1.4375rem);
   font-weight: inherit;
 }
@@ -61,13 +61,13 @@
   box-sizing: border-box;
 }
 
-.content__card {
+.card {
   border: 2px solid #000;
   box-sizing: border-box;
   background-color: var(--background-color);
 }
 
-.content__card_title {
+.card-title {
   padding-inline-start: 10px;
   padding-block: 5px;
   font-variation-settings: "wgth" 700, "wdth" 110, "opsz" 0;
@@ -75,20 +75,20 @@
   inline-size: 90%;
 }
 
-.content__image-box {
+.image-box {
   position: relative;
   max-block-size: 696px;
   border-top: 2px solid var(--main-color);
   border-bottom: 2px solid var(--main-color);
 }
 
-.content__card_image {
+.image-box__image {
   width: 100%;
   object-position: center;
   object-fit: cover;
 }
 
-.content__label_image {
+.image-box__label {
   content: "</HTML>";
   color: var(--main-text-color);
   position: absolute;
@@ -140,19 +140,19 @@
   filter: blur(4px);
 }
 
-.content__text-box {
+.text-box {
   padding: 27px 25px 0;
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 
-.content__text-box_paragraph {
+.text-box__paragraph {
   line-height: 21px;
   font-size: 18px;
 }
 
-.content__card_like-heart {
+.button-box {
   align-self: end;
   display: flex;
   justify-content: end;
@@ -293,7 +293,7 @@
   animation: heart-scale 0.3s 0.1s alternate var(--anim-time-func);
 }
 
-.footer__button {
+.footer-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,7 +306,7 @@
   margin-bottom: 100px;
 }
 
-.footer__button_image {
+.footer-button__image {
   position: relative;
   z-index: 1;
   color: var(--background-color, #fff);
@@ -363,19 +363,19 @@
 }
 
 @media (width < 376px) {
-  .content__text-box_paragraph {
+  .text-box__paragraph {
     inline-size: 98%;
   }
 
-  .footer__button {
+  .footer-button {
     flex-direction: column;
     max-inline-size: 310px;
     padding: 15px 20px;
     gap: 10px;
-    margin: 50px auto 0;
+    margin: 50px auto 100px;
   }
 
-  .footer__button_image {
+  .footer-button__image {
     block-size: 28px;
   }
 }
